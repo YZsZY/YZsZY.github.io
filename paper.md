@@ -46,6 +46,7 @@
 * Paper Link: https://arxiv.org/abs/2303.13277
 * Code Link: https://github.com/zju3dv/SINE
 * teaser: assets/publications/cvpr23_sine.mp4
+* teaser png: assets/publications/cvpr23_sine.png
 * Note: None
 
 ## PC-Planner_SIGGRAPH-ASIA_24
