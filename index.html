@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zesong Yang - Ph.D. student at Zhejiang University researching simulation-ready 3D reconstruction, physical animation, and 3D-controllable generation." />
+  <title>Zesong Yang</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=LXGW+WenKai+TC&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/profile_image.png" type="image/png" />
+
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-fa-star" viewBox="0 0 576 512">
+      <path d="M316.9 18.4C311.6 7.5 300.4 0 288 0s-23.6 7.5-28.9 18.4L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3L288 439.6l128.4 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18.4z"></path>
+    </symbol>
+  </svg>
+
+  <aside class="paper-sidebar" aria-labelledby="paper-sidebar-title">
+    <h2 class="paper-sidebar__title" id="paper-sidebar-title">Publications</h2>
+    <nav class="paper-sidebar__nav" aria-label="Publication list">
+      <a class="paper-sidebar__link" href="#pub-avatarforcing"><span class="paper-sidebar__venue">arXiv 2026</span><span class="paper-sidebar__paper">AvatarForcing: One-Step Streaming Talking Avatars via Local-Future Sliding-Window Denoising</span></a>
+      <a class="paper-sidebar__link" href="#pub-megas"><span class="paper-sidebar__venue">ECCV 2026</span><span class="paper-sidebar__paper">MeGAS: Thermomechanical Dynamic Gaussian Splatting for Thermophysical Scene Editing</span></a>
+      <a class="paper-sidebar__link" href="#pub-gaussianzoom"><span class="paper-sidebar__venue">CVPR 2026</span><span class="paper-sidebar__paper">GaussianZoom: Progressive Zoom-in Generative 3D Gaussian Splatting with Geometric and Semantic Guidance</span></a>
+      <a class="paper-sidebar__link" href="#pub-diffwind"><span class="paper-sidebar__venue">ICLR 2026</span><span class="paper-sidebar__paper">DiffWind: Physics-Informed Differentiable Modeling of Wind-Driven Object Dynamics</span></a>
+      <a class="paper-sidebar__link" href="#pub-instascene"><span class="paper-sidebar__venue">ICCV 2025</span><span class="paper-sidebar__paper">InstaScene: Towards Complete 3D Instance Decomposition and Reconstruction from Cluttered Scenes</span></a>
+      <a class="paper-sidebar__link" href="#pub-hiscene"><span class="paper-sidebar__venue">ACM MM 2025</span><span class="paper-sidebar__paper">HiScene: Creating Hierarchical 3D Scenes with Isometric View Generation</span></a>
+      <a class="paper-sidebar__link" href="#pub-gurecon"><span class="paper-sidebar__venue">AAAI 2025</span><span class="paper-sidebar__paper">GURecon: Learning Detailed 3D Geometric Uncertainties for Neural Surface Reconstruction</span></a>
+      <a class="paper-sidebar__link" href="#pub-pc-planner"><span class="paper-sidebar__venue">ACM SIGGRAPH Asia 2024</span><span class="paper-sidebar__paper">PC-Planner: Physics-Constrained Self-Supervised Learning for Robust Neural Motion Planning with Shape-Aware Distance Function</span></a>
+      <a class="paper-sidebar__link" href="#pub-sine"><span class="paper-sidebar__venue">CVPR 2023</span><span class="paper-sidebar__paper">SINE: Semantic-driven Image-based NeRF Editing with Prior-guided Editing Field</span></a>
+    </nav>
+  </aside>
+
+  <div class="container">
+    <section aria-labelledby="about-name">
+      <div class="about">
+        <div class="about__side">
+          <img class="about__photo" src="assets/profile_image.png" alt="Zesong Yang" />
+          <nav class="contact" aria-label="Contact links">
+            <a class="contact__link" href="mailto:zesongyang0@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+            <a class="contact__link" href="https://github.com/YZsZY" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="1.5 1.5 21 21" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a class="contact__link" href="https://scholar.google.com/citations?user=QvbYwt0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm0-24 12 9.5-4.838 3.94A8.998 8.998 0 0 0 12 10a8.998 8.998 0 0 0-7.162 3.44L0 9.5 12 0Z"/></svg>
+            </a>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+          </nav>
+        </div>
+        <div class="about__content">
+          <h1 class="about__name" id="about-name">
+            <span>Zesong Yang</span>
+            <span class="about__cn">杨泽松</span>
+          </h1>
+          <p class="about__bio">
+            I am a third-year Ph.D. student at the <a href="https://github.com/zju3dv" target="_blank" rel="noopener noreferrer">ZJU3DV group</a> of State Key Lab of CAD&amp;CG, Zhejiang University, supervised by Prof. <a href="https://zhpcui.github.io/" target="_blank" rel="noopener noreferrer">Zhaopeng Cui</a>.
+            I am also a research intern at LightSpeed Studios, Tencent, under the Qingyun Program, where I work with <a href="http://chenweikai.github.io/" target="_blank" rel="noopener noreferrer">Weikai Chen</a>.
+            Before that, I received my Bachelor's degree at Southeast University (Seq 2019 - June 2023). 
+          </p>
+          <p class="about__bio">
+            My research interests focus on simulation-ready 3D reconstruction, physical animation, and 3D-controllable generation.
+            I received my Bachelor's degree from Southeast University in June 2023. I am open to collaborations; please feel free to email me if you are interested in my research.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="exp-title">
+      <h2 class="section-title" id="exp-title">Experiences</h2>
+      <div class="exp-grid" role="list" aria-label="Experience timeline">
+        <article class="exp-card" role="listitem">
+          <img class="exp-card__icon" src="assets/experiences/zju.png" alt="Zhejiang University, CAD &amp; CG Lab" />
+          <div class="exp-card__body">
+            <p class="exp-card__org">Zhejiang University,<br />CAD &amp; CG Lab</p>
+            <p class="exp-card__role">PhD Student</p>
+            <p class="exp-card__mentor">Advisor: <a href="https://zhpcui.github.io" target="_blank" rel="noopener noreferrer">Prof. Zhaopeng Cui</a></p>
+            <p class="exp-card__period">Sep.2023 - Now</p>
+          </div>
+        </article>
+        <article class="exp-card" role="listitem">
+          <img class="exp-card__icon" src="assets/experiences/Tencent.png" alt="Tencent, Lightspeed" />
+          <div class="exp-card__body">
+            <p class="exp-card__org">Tencent, Lightspeed</p>
+            <p class="exp-card__role">Research Intern<br />Qingyun Program</p>
+            <p class="exp-card__mentor">Mentor: <a href="http://chenweikai.github.io/" target="_blank" rel="noopener noreferrer">Weikai Chen</a></p>
+            <p class="exp-card__period">Apr.2026 - Now</p>
+          </div>
+        </article>
+        <article class="exp-card" role="listitem">
+          <img class="exp-card__icon" src="assets/experiences/pico.svg" alt="ByteDance, Pico" />
+          <div class="exp-card__body">
+            <p class="exp-card__org">ByteDance, Pico</p>
+            <p class="exp-card__role">Research Intern</p>
+            <p class="exp-card__mentor">Mentor: <a href="https://ybbbbt.com/" target="_blank" rel="noopener noreferrer">Bangbang Yang</a> and <a href="https://scholar.google.com/citations?user=VG_cdLAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Yuewen Ma</a></p>
+            <p class="exp-card__period">Apr.2024 - Apr.2025</p>
+          </div>
+        </article>
+        <article class="exp-card" role="listitem">
+          <img class="exp-card__icon" src="assets/experiences/seu.jpg" alt="Southeast University" />
+          <div class="exp-card__body">
+            <p class="exp-card__org">Southeast University</p>
+            <p class="exp-card__role">Bachelor Degree</p>
+            <p class="exp-card__mentor">Advisor: <a href="https://www.yangangwang.com/" target="_blank" rel="noopener noreferrer">Prof. Yangang Wang</a></p>
+            <p class="exp-card__period">Sep.2019 - Jun.2023</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" aria-labelledby="pub-title">
+      <h2 class="section-title" id="pub-title">Selected Publications</h2>
+      <p class="pub-note">Please refer to <a href="https://scholar.google.com/citations?user=QvbYwt0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> for the full publication list.</p>
+      <div class="pub-list">
+        <article class="pub" id="pub-avatarforcing">
+          <video class="pub__thumb" autoplay loop muted playsinline preload="metadata"><source src="assets/publications/arxiv26_avatarforcing.mp4" type="video/mp4" /></video>
+          <div class="pub__body">
+            <span class="badge">arXiv 2026</span>
+            <p class="pub__title">AvatarForcing: One-Step Streaming Talking Avatars via Local-Future Sliding-Window Denoising</p>
+            <p class="pub__authors">Liyuan Cui, Wentao Hu, Wenyuan Zhang, <strong>Zesong Yang</strong>, Fan Shi, Xiaoqiang Liu</p>
+            <div class="pill-links">
+              <a class="pill" href="https://cuiliyuan121.github.io/AvatarForcing/" target="_blank" rel="noopener noreferrer">Project</a>
+              <a class="pill" href="https://arxiv.org/abs/2603.14331" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="badge-link" href="https://github.com/KlingAIResearch/AvatarForcing" target="_blank" rel="noopener noreferrer"><span class="gh-badge" data-repo="KlingAIResearch/AvatarForcing"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" id="pub-megas">
+          <video class="pub__thumb" autoplay loop muted playsinline preload="metadata"><source src="assets/publications/eccv26_megas.mp4" type="video/mp4" /></video>
+          <div class="pub__body">
+            <span class="badge">ECCV 2026</span>
+            <p class="pub__title">MeGAS: Thermomechanical Dynamic Gaussian Splatting for Thermophysical Scene Editing</p>
+            <p class="pub__authors"><strong>Zesong Yang*</strong>, Yuanhang Lei*, Liyuan Cui, Yihang Chen, Jiaer Huang, Boming Zhao, Peter Yichen Chen, Hujun Bao, Zhaopeng Cui</p>
+            <div class="pill-links">
+              <a class="pill" href="https://zju3dv.github.io/MeGAS/" target="_blank" rel="noopener noreferrer">Project</a>
+              <a class="pill" href="https://arxiv.org/abs/2606.23455" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="badge-link" href="https://github.com/zju3dv/MeGAS" target="_blank" rel="noopener noreferrer"><span class="gh-badge" data-repo="zju3dv/MeGAS"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" id="pub-gaussianzoom">
+          <video class="pub__thumb" autoplay loop muted playsinline preload="metadata"><source src="assets/publications/cvpr26_gszoom.mp4" type="video/mp4" /></video>
+          <div class="pub__body">
+            <span class="badge">CVPR 2026 (<span class="badge__accent">† Project Leader</span>)</span>
+            <p class="pub__title">GaussianZoom: Progressive Zoom-in Generative 3D Gaussian Splatting with Geometric and Semantic Guidance</p>
+            <p class="pub__authors">Jiale Shi, Jiarui Hu, <strong>Zesong Yang†</strong>, Kaixuan Luan, Hujun Bao, Zhaopeng Cui</p>
+            <div class="pill-links">
+              <a class="pill" href="https://zju3dv.github.io/GaussianZoom/" target="_blank" rel="noopener noreferrer">Project</a>
+              <a class="pill" href="https://arxiv.org/abs/2605.18252" target="_blank" rel="noopener noreferrer">Paper</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" id="pub-diffwind">
+          <video class="pub__thumb" autoplay loop muted playsinline preload="metadata"><source src="assets/publications/iclr26_diffwind.mp4" type="video/mp4" /></video>
+          <div class="pub__body">
+            <span class="badge">ICLR 2026</span>
+            <p class="pub__title">DiffWind: Physics-Informed Differentiable Modeling of Wind-Driven Object Dynamics</p>
+            <p class="pub__authors">Yuanhang Lei*, Boming Zhao*, <strong>Zesong Yang*</strong>, Xingxuan Li, Tao Cheng, Haocheng Peng, Ru Zhang, Yang Yang, Siyuan Huang, Yujun Shen, Ruizhen Hu, Hujun Bao, Zhaopeng Cui</p>
+            <div class="pill-links">
+              <a class="pill" href="https://zju3dv.github.io/DiffWind/" target="_blank" rel="noopener noreferrer">Project</a>
+              <a class="pill" href="https://arxiv.org/abs/2603.09668" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="badge-link" href="https://github.com/zju3dv/DiffWind" target="_blank" rel="noopener noreferrer"><span class="gh-badge" data-repo="zju3dv/DiffWind"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" id="pub-instascene">
+          <video class="pub__thumb" autoplay loop muted playsinline preload="metadata"><source src="assets/publications/iccv25_instascene.mp4" type="video/mp4" /></video>
+          <div class="pub__body">
+            <span class="badge">ICCV 2025 (<span class="badge__accent">ByteDance Internship</span>)</span>
+            <p class="pub__title">InstaScene: Towards Complete 3D Instance Decomposition and Reconstruction from Cluttered Scenes</p>
+            <p class="pub__authors"><strong>Zesong Yang</strong>, Bangbang Yang, Wenqi Dong, Chenxuan Cao, Liyuan Cui, Yuewen Ma, Zhaopeng Cui, Hujun Bao</p>
+            <div class="pill-links">
+              <a class="pill" href="https://zju3dv.github.io/instascene/" target="_blank" rel="noopener noreferrer">Project</a>
+              <a class="pill" href="https://arxiv.org/abs/2507.08416" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="badge-link" href="https://github.com/zju3dv/InstaScene" target="_blank" rel="noopener noreferrer"><span class="gh-badge" data-repo="zju3dv/InstaScene"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" id="pub-hiscene">
+          <video class="pub__thumb" autoplay loop muted playsinline preload="metadata"><source src="assets/publications/mm25_hiscene.mp4" type="video/mp4" /></video>
+          <div class="pub__body">
+            <span class="badge">ACM MM 2025</span>
+            <p class="pub__title">HiScene: Creating Hierarchical 3D Scenes with Isometric View Generation</p>
+            <p class="pub__authors">Wenqi Dong, Bangbang Yang, <strong>Zesong Yang</strong>, Yuan Li, Tao Hu, Hujun Bao, Yuewen Ma, Zhaopeng Cui</p>
+            <div class="pill-links">
+              <a class="pill" href="https://zju3dv.github.io/hiscene/" target="_blank" rel="noopener noreferrer">Project</a>
+              <a class="pill" href="https://arxiv.org/abs/2504.13072" target="_blank" rel="noopener noreferrer">Paper</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" id="pub-gurecon">
+          <video class="pub__thumb" autoplay loop muted playsinline preload="metadata"><source src="assets/publications/aaai25_gurecon.mp4" type="video/mp4" /></video>
+          <div class="pub__body">
+            <span class="badge">AAAI 2025 (<span class="badge__accent">Oral</span>)</span>
+            <p class="pub__title">GURecon: Learning Detailed 3D Geometric Uncertainties for Neural Surface Reconstruction</p>
+            <p class="pub__authors"><strong>Zesong Yang</strong>, Ru Zhang, Jiale Shi, Zixiang Ai, Boming Zhao, Hujun Bao, Luwei Yang, Zhaopeng Cui</p>
+            <div class="pill-links">
+              <a class="pill" href="https://zju3dv.github.io/GURecon/" target="_blank" rel="noopener noreferrer">Project</a>
+              <a class="pill" href="https://arxiv.org/abs/2412.14939" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="badge-link" href="https://github.com/zju3dv/GURecon" target="_blank" rel="noopener noreferrer"><span class="gh-badge" data-repo="zju3dv/GURecon"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" id="pub-pc-planner">
+          <video class="pub__thumb" autoplay loop muted playsinline preload="metadata"><source src="assets/publications/sigasia24_pcplanner.mp4" type="video/mp4" /></video>
+          <div class="pub__body">
+            <span class="badge">ACM SIGGRAPH Asia 2024</span>
+            <p class="pub__title">PC-Planner: Physics-Constrained Self-Supervised Learning for Robust Neural Motion Planning with Shape-Aware Distance Function</p>
+            <p class="pub__authors">Xujie Shen*, Haocheng Peng*, <strong>Zesong Yang</strong>, Juzhan Xu, Hujun Bao, Ruizhen Hu, Zhaopeng Cui</p>
+            <div class="pill-links">
+              <a class="pill" href="https://zju3dv.github.io/pc-planner/" target="_blank" rel="noopener noreferrer">Project</a>
+              <a class="pill" href="https://arxiv.org/abs/2410.12805" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="badge-link" href="https://github.com/fishcrap/pc-planner" target="_blank" rel="noopener noreferrer"><span class="gh-badge" data-repo="fishcrap/pc-planner"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" id="pub-sine">
+          <video class="pub__thumb" autoplay loop muted playsinline preload="metadata"><source src="assets/publications/cvpr23_sine.mp4" type="video/mp4" /></video>
+          <div class="pub__body">
+            <span class="badge">CVPR 2023</span>
+            <p class="pub__title">SINE: Semantic-driven Image-based NeRF Editing with Prior-guided Editing Field</p>
+            <p class="pub__authors">Chong Bao, Yinda Zhang, Bangbang Yang, Tianxing Fan, <strong>Zesong Yang</strong>, Hujun Bao, Guofeng Zhang, Zhaopeng Cui</p>
+            <div class="pill-links">
+              <a class="pill" href="https://zju3dv.github.io/sine/" target="_blank" rel="noopener noreferrer">Project</a>
+              <a class="pill" href="https://arxiv.org/abs/2303.13277" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="badge-link" href="https://github.com/zju3dv/SINE" target="_blank" rel="noopener noreferrer"><span class="gh-badge" data-repo="zju3dv/SINE"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="open-source-title">
+      <h2 class="section-title" id="open-source-title">Open-Source</h2>
+      <div class="project-list">
+        <article class="project">
+          <video class="project__thumb" autoplay loop muted playsinline preload="metadata"><source src="assets/projects/largescale_nerf.mp4" type="video/mp4" /></video>
+          <div class="project__body">
+            <span class="badge">Large-scale NeRF Reconstruction</span>
+            <p class="project__title">State-of-the-art, simple, fast unbounded / large-scale NeRFs.</p>
+            <p class="project__desc">Core contributor to the first open-source city-scale NeRF-based street-view reconstruction framework.</p>
+            <div class="pill-links">
+              <a class="badge-link" href="https://github.com/sjtuytc/UnboundedNeRFPytorch" target="_blank" rel="noopener noreferrer"><span class="gh-badge" data-repo="sjtuytc/UnboundedNeRFPytorch"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="awards-title">
+      <h2 class="section-title" id="awards-title">Awards</h2>
+      <div class="award">
+        <p class="award__name">Best Graduation Thesis, Southeast University</p>
+        <span class="award__year">2023</span>
+      </div>
+      <div class="award">
+        <p class="award__name">National Scholarship, Southeast University</p>
+        <span class="award__year">2021</span>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2026 Zesong Yang</p>
+      <p>Template inspired by <a href="https://github.com/krahets/krahets.github.io" target="_blank" rel="noopener noreferrer">krahets.github.io</a>.</p>
+    </footer>
+  </div>
+
+  <script>
+    var ICONS = {
+      light: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>',
+      dark: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>'
+    };
+
+    var STAR_CACHE_TTL = 6 * 60 * 60 * 1000;
+    var btn = document.getElementById('theme-toggle');
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      btn.innerHTML = ICONS[theme === 'dark' ? 'dark' : 'light'];
+    }
+
+    function formatStars(count) {
+      if (count < 1000) return String(count);
+      var divisor = count >= 1000000 ? 1000000 : 1000;
+      var suffix = count >= 1000000 ? 'M' : 'k';
+      var value = count / divisor;
+      var rounded = value >= 10 ? Math.round(value) : Math.round(value * 10) / 10;
+      return String(rounded).replace(/\.0$/, '') + suffix;
+    }
+
+    function starCacheKey(repo) { return 'github-stars:' + repo; }
+
+    function readCachedStars(repo) {
+      try {
+        var cached = JSON.parse(localStorage.getItem(starCacheKey(repo)));
+        if (!cached || typeof cached.count !== 'number') return null;
+        return cached;
+      } catch (err) {
+        return null;
+      }
+    }
+
+    function writeCachedStars(repo, count) {
+      try {
+        localStorage.setItem(starCacheKey(repo), JSON.stringify({ count: count, updatedAt: Date.now() }));
+      } catch (err) {}
+    }
+
+    function setGithubStars(badge, repo, count) {
+      var countNode = badge.querySelector('.gh-badge__count');
+      if (!countNode) return;
+      countNode.hidden = false;
+      countNode.textContent = formatStars(count);
+      badge.setAttribute('aria-label', repo + ' has ' + count.toLocaleString() + ' GitHub stars');
+    }
+
+    function githubRepoUrl(repo) {
+      return 'https://api.github.com/repos/' + repo.split('/').map(encodeURIComponent).join('/');
+    }
+
+    function loadGithubStars() {
+      if (!window.fetch) {
+        document.querySelectorAll('.gh-badge[data-repo]').forEach(function (badge) {
+          var link = badge.closest('.badge-link');
+          if (link) link.hidden = true;
+        });
+        return;
+      }
+
+      document.querySelectorAll('.gh-badge[data-repo]').forEach(function (badge) {
+        var repo = badge.getAttribute('data-repo');
+        var cached = readCachedStars(repo);
+        if (cached) setGithubStars(badge, repo, cached.count);
+        if (cached && Date.now() - cached.updatedAt < STAR_CACHE_TTL) return;
+
+        fetch(githubRepoUrl(repo), { headers: { Accept: 'application/vnd.github+json' } })
+          .then(function (response) {
+            if (!response.ok) throw new Error('GitHub API error');
+            return response.json();
+          })
+          .then(function (data) {
+            if (typeof data.stargazers_count !== 'number') throw new Error('Missing star count');
+            setGithubStars(badge, repo, data.stargazers_count);
+            writeCachedStars(repo, data.stargazers_count);
+          })
+          .catch(function () {
+            if (!cached) {
+              var link = badge.closest('.badge-link');
+              if (link) link.hidden = true;
+            }
+          });
+      });
+    }
+
+    function updatePaperSidebar() {
+      var sidebar = document.querySelector('.paper-sidebar');
+      var publications = document.getElementById('publications');
+      if (!sidebar || !publications) return;
+
+      var rect = publications.getBoundingClientRect();
+      var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+      var isInPublications = rect.top < viewportHeight * 0.72 && rect.bottom > viewportHeight * 0.28;
+      sidebar.classList.toggle('is-visible', isInPublications);
+    }
+
+    applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
+    loadGithubStars();
+    updatePaperSidebar();
+
+    window.addEventListener('scroll', updatePaperSidebar, { passive: true });
+    window.addEventListener('resize', updatePaperSidebar);
+
+    btn.addEventListener('click', function () {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      applyTheme(next);
+    });
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+      if (!localStorage.getItem('theme')) applyTheme(e.matches ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
