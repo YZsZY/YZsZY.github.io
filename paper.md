@@ -126,6 +126,15 @@
 * Code Link: https://github.com/KlingAIResearch/AvatarForcing
 * teaser: assets/publications/arxiv26_avatarforcing.mp4
 
+## GeometryasAddress_Arxiv_26
+* Title: Geometry as Address: Routing Attention to Visual Memory for Long-Horizon Camera-Controlled Video Generation
+* author: Zesong Yang, Weikai Chen, Liyuan Cui, Lutao Jiang, Runze Zhang, Yingda Yin, Xiaoyang Huang, Kai Yan, Keyang Luo, Wangguandong Zheng, Xin Wang, Hujun Bao, Zhaopeng Cui
+* Conference: Arxiv
+* Project Page: https://zju3dv.github.io/geometry-as-address/
+* Paper Link: https://arxiv.org/abs/2609.34722
+* Code Link: https://github.com/zju3dv/geometry-as-address
+* teaser: assets/publications/arxiv26_geometry-as-address.mp4
+
 # Open-Source
 ## State-of-the-art, simple, fast unbounded / large-scale NeRFs.
 * Project Link: https://github.com/sjtuytc/UnboundedNeRFPytorch
