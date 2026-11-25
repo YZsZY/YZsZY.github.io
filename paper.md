@@ -48,6 +48,8 @@
 * teaser: assets/publications/cvpr23_sine.mp4
 * teaser png: assets/publications/cvpr23_sine.png
 * Note: None
+* Keywords: 3D Reconstruction; Neural Radiance Field; 3D Editing
+* Abstract: Edits a NeRF scene from a single edited image; a prior-guided editing field enables fine-grained geometry and appearance edits with multi-view consistency.
 
 ## PC-Planner_SIGGRAPH-ASIA_24
 * Title: PC-planner: Physics-constrained self-supervised learning for robust neural motion planning with shape-aware distance function
@@ -58,6 +60,8 @@
 * Code Link: https://github.com/fishcrap/pc-planner
 * Note: None
 * teaser: assets/publications/sigasia24_pcplanner.mp4
+* Keywords: Path Planning
+* Abstract: Self-supervised neural motion planning with physics constraints and a shape-aware distance function, enabling efficient collision checking and robust planning for robots of diverse shapes
 
 ## GURecon_AAAI_25
 * Title: GURecon: Learning Detailed 3D Geometric Uncertainties for Neural Surface Reconstruction
@@ -67,6 +71,8 @@
 * Paper Link: https://arxiv.org/abs/2412.14939
 * Code Link: https://github.com/zju3dv/GURecon
 * teaser: assets/publications/aaai25_gurecon.mp4
+* Keywords: 3D Reconstruction; Neural Implicit Surface; Active Reconstruction
+* Abstract: Estimates fine-grained geometric uncertainty of neural surfaces without ground-truth geometry, via consistency-guided online distillation and illumination decoupling, benefiting downstream incremental recon-struction.
 
 ## InstaScene_ICCV_25
 * Title: Instascene: Towards complete 3d instance decomposition and reconstruction from cluttered scenes
@@ -77,6 +83,8 @@
 * Code Link: https://github.com/zju3dv/InstaScene
 * Note: Completed during an internship at ByteDance.
 * teaser: assets/publications/iccv25_instascene.mp4
+* Keywords: 3D Generation; Generative Reconstruction; 3D Understanding; Real-to-sim; 3D Segmentation
+* Abstract: Decomposes cluttered scenes into complete 3D instances: spatial contrastive learning yields precise instance segmentation, and geometry-guided in-situ generation recovers occluded object parts from partial observations.
 
 ## HiScene_MM_25
 * Title: HiScene: creating hierarchical 3D scenes with isometric view generation
@@ -86,6 +94,8 @@
 * Paper Link: https://arxiv.org/abs/2504.13072
 * Code Link: Not available
 * teaser: assets/publications/mm25_hiscene.mp4
+* Keywords: 3D Generation
+* Abstract: Bridges 2D image generation and 3D reconstruction via isometric views; video-diffusion-based amodal completion and shape prior injection yield complete, compositional, and editable 3D scenes.
 
 ## DiffWind_ICLR_26
 * Title: DiffWind: Physics-Informed Differentiable Modeling of Wind-Driven Object Dynamics
@@ -95,6 +105,8 @@
 * Paper Link: https://arxiv.org/abs/2603.09668
 * Code Link: https://github.com/zju3dv/DiffWind
 * teaser: assets/publications/iclr26_diffwind.mp4
+* Keywords: 3D Gaussian Splatting; Physics-based Animation
+* Abstract: Reconstructs wind-driven object dynamics from video by coupling differentiable MPM with LBM fluid constraints, jointly optimizing wind fields and object motion for forward simulation and controllable wind retargeting.
 
 ## GaussianZoom_CVPR_26
 * Title: GaussianZoom: Progressive Zoom-in Generative 3D Gaussian Splatting with Geometric and Semantic Guidance
@@ -105,6 +117,8 @@
 * Code Link: Not available
 * Note: Completed as the Project Leader.
 * teaser: assets/publications/cvpr26_gszoom.mp4
+* Keywords: Level of Detail; 3D Gaussian Splatting; Generative Reconstruction
+* Abstract: Enables extreme zoom-in 3DGS rendering from low-resolution inputs via geometry-consistent multi-view super-resolution, VLM-guided detail synthesis, and an expandable continuous LoD hierarchy, staying alias-free across large magnifications.
 
 
 ## MeGAS_ECCV_26
@@ -115,6 +129,8 @@
 * Paper Link: https://arxiv.org/abs/2606.23455
 * Code Link: https://github.com/zju3dv/MeGAS
 * teaser: assets/publications/eccv26_megas.mp4
+* Keywords: 3D Gaussian Splatting; Physics-based Animation
+* Abstract: Couples temperature-aware Gaussians with heat transfer, phase-change dynamics, and topology-adaptive rendering to photorealistically simulate and edit thermophysical processes such as melting and solid-ification.
 
 
 ## AvatarForcing_Arxiv_26
@@ -125,6 +141,8 @@
 * Paper Link: https://arxiv.org/abs/2603.14331
 * Code Link: https://github.com/KlingAIResearch/AvatarForcing
 * teaser: assets/publications/arxiv26_avatarforcing.mp4
+* Keywords: Long-term Video Generation; Real-Time Talking Avatar Generation
+* Abstract: One-step streaming diffusion with local-future sliding-window denoising, dual-anchor temporal forc-ing, and streaming distillation, producing drift-free, lip-synced long-form talking avatars in real time (34 ms/frame).
 
 ## GeometryasAddress_Arxiv_26
 * Title: Geometry as Address: Routing Attention to Visual Memory for Long-Horizon Camera-Controlled Video Generation
@@ -134,6 +152,20 @@
 * Paper Link: https://arxiv.org/abs/2609.34722
 * Code Link: https://github.com/zju3dv/geometry-as-address
 * teaser: assets/publications/arxiv26_geometry-as-address.mp4
+* Keywords: Camera-controlled; Revisit Memory; Long-term Video Generation
+* Abstract: Uses geometry as a token-level address to retrieve visual memory instead of maintaining persistent 3D memory; Geometric Correspondence Attention with an occlusion-aware Invisible Octree enables minute-long videos with precise camera control and state-of-the-art revisit consistency
+
+## SPARC_Arxiv_26
+* Title: SPARC: Geometry-Guided Attention Pruning for Long-Horizon Camera-Controlled Video Generation
+* author: Zesong Yang, Weikai Chen, Liyuan Cui, Yuan Li, Jiaxin Huang, Lutao Jiang, Runze Zhang, Yingda Yin, Xiaoyang Huang, Kai Yan, Keyang Luo, Xin Wang, Hujun Bao, Zhaopeng Cui
+* Conference: Arxiv
+* Project Page: https://zju3dv.github.io/SPARC/
+* Paper Link: https://arxiv.org/abs/2609.34722
+* Code Link: https://github.com/zju3dv/SPARC
+* teaser: assets/publications/arxiv26_sparc.mp4
+* Keywords: Camera-controlled; Revisit Memory; Long-term Video Generation
+* Abstract: Shows that geometry-guided pruning of self-attention in pretrained video DiTs alone achieves precise camera control and revisit consistency for long-horizon video, with no extra control or memory modules and
+higher efficiency.
 
 # Open-Source
 ## State-of-the-art, simple, fast unbounded / large-scale NeRFs.

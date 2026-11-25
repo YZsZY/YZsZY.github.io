@@ -12,4 +12,5 @@
     ** note after the Title -> (Note)
 * Teaser Png: assets/publications/xx.png
 * Teaser Video: assets/publications/xx.mp4
-* Description: None
+* Keywords: None
+* Abstract: None
