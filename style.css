@@ -237,6 +237,25 @@ a:hover { text-decoration: underline; }
   margin-bottom: 0.6em;
 }
 
+.interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0.85rem 0 0.4rem;
+}
+
+.interest {
+  font-size: var(--text-xs);
+  line-height: 1;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: 6px 10px;
+  background: color-mix(in oklch, #fff 60%, var(--bg));
+}
+
+[data-theme="dark"] .interest { background: color-mix(in oklch, #fff 4%, var(--bg)); }
+
 .contact {
   display: flex;
   flex-wrap: wrap;
@@ -658,6 +677,7 @@ section { margin-bottom: clamp(44px, 8vw, 68px); }
   .about__content { width: 100%; }
   .about__name { justify-content: center; }
   .about__bio { max-width: none; }
+  .interest-list,
   .contact { justify-content: center; }
   .pub, .project { flex-direction: column; }
   .pub__media, .pub__thumb, .project__thumb { width: 100%; height: auto; }
