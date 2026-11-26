@@ -160,7 +160,7 @@
 * author: Zesong Yang, Weikai Chen, Liyuan Cui, Yuan Li, Jiaxin Huang, Lutao Jiang, Runze Zhang, Yingda Yin, Xiaoyang Huang, Kai Yan, Keyang Luo, Xin Wang, Hujun Bao, Zhaopeng Cui
 * Conference: Arxiv
 * Project Page: https://zju3dv.github.io/SPARC/
-* Paper Link: https://arxiv.org/abs/2609.34722
+* Paper Link: https://arxiv.org/abs/2611.34064
 * Code Link: https://github.com/zju3dv/SPARC
 * teaser: assets/publications/arxiv26_sparc.mp4
 * Keywords: Camera-controlled; Revisit Memory; Long-term Video Generation
